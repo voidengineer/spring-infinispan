@@ -99,4 +99,15 @@
       </plugins>
     </pluginManagement>
   </build>
+  
+  <distributionManagement>
+    <repository>
+      <id>voidengineer-mvn-repo</id>
+      <url>https://github.com/voidengineer/voidengineer-mvn-repo/raw/master/releases</url>
+    </repository>
+    <snapshotRepository>
+      <id>voidengineer-mvn-repo-snapshots</id>
+      <url>https://github.com/voidengineer/voidengineer-mvn-repo/raw/master/snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
 </project>
