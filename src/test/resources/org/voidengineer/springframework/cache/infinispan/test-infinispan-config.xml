@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<infinispan xmlns="urn:infinispan:config:4.0"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="urn:infinispan:config:4.0 http://docs.jboss.org/infinispan/schemas/infinispan-config-4.0.xsd"
+>
+  <global>
+    <transport clusterName="Test-Infinispan-Cluster" />
+    <shutdown hookBehavior="DONT_REGISTER" />
+  </global>
+
+  <namedCache name="testCache1">
+    <eviction maxEntries="1000" />
+  </namedCache>
+</infinispan>            
