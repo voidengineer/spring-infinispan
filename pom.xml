@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  
+
   <name>Spring Framework support for Infinispan</name>
   <groupId>org.voidengineer.spring</groupId>
   <artifactId>spring-infinispan</artifactId>
   <version>0.1-SNAPSHOT</version>
-  
+
   <description>
     This library contains implementations of org.springframework.beans.factory.FactoryBean
-     that provide access to instances of Infinispans EmbeddedCacheManager and Cache. 
+     that provide access to instances of Infinispans EmbeddedCacheManager and Cache.
      It is inspired by Springframeworks own EhCacheFactoryBean and EhCacheManagerFactoryBean.
   </description>
-  
+
   <licenses>
     <license>
       <name>Apache License, Version 2.0</name>
       <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
     </license>
   </licenses>
-  
+
   <inceptionYear>2010</inceptionYear>
-  
+
   <developers>
     <developer>
       <id>soeren.chittka@gmail.com</id>
@@ -29,23 +29,23 @@
       <email>soeren.chittka@gmail.com</email>
     </developer>
   </developers>
-  
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <springframework.version>3.0.5.RELEASE</springframework.version>
     <infinispan.version>4.1.0.FINAL</infinispan.version>
   </properties>
-  
+
   <repositories>
     <repository>
         <id>jboss-public-repository-group</id>
         <name>JBoss Public Maven Repository Group</name>
         <url>https://repository.jboss.org/nexus/content/groups/public-jboss/</url>
         <releases><enabled>true</enabled></releases>
-        <snapshots><enabled>false</enabled></snapshots>        
+        <snapshots><enabled>false</enabled></snapshots>
      </repository>
   </repositories>
-  
+
   <dependencies>
     <dependency>
       <groupId>org.springframework</groupId>
@@ -57,19 +57,19 @@
       <artifactId>spring-beans</artifactId>
       <version>${springframework.version}</version>
     </dependency>
-    
-  	<dependency>
-  		<groupId>org.infinispan</groupId>
-  		<artifactId>infinispan-core</artifactId>
-  		<version>${infinispan.version}</version>
-  	</dependency>
-    
+
+    <dependency>
+      <groupId>org.infinispan</groupId>
+      <artifactId>infinispan-core</artifactId>
+      <version>${infinispan.version}</version>
+    </dependency>
+
     <dependency>
       <groupId>commons-logging</groupId>
       <artifactId>commons-logging</artifactId>
       <version>1.1.1</version>
     </dependency>
-    
+
     <dependency>
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
@@ -83,7 +83,7 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-  
+
   <build>
     <pluginManagement>
       <plugins>
